@@ -1,0 +1,13 @@
+My mission is: In ubuntu :Write shell script to Ensure separate partition exists for /var/log
+The steps that should be in the script:
+1 – define the target partition device, and the mount point at /var/log
+2 - check if the /var/log is already mounted at the separate partition
+If not 
+3 – check if the target that we defined exists, if not exit with an error
+4 – create a file system at the partition
+5 – if the mount point doesn’t exist, create it
+6 – mount the partition
+7 - Add an entry to /etc/fstab for automatic mounting at boot
+
+
+	

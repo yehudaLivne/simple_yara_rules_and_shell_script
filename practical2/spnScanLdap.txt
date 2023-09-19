@@ -1,0 +1,7 @@
+My mission is to write a rule to catch SPN scanning using LDAP.
+To scan all the SPNs associated with network services, an attacker may make a query for all the SPNs or all the user and computers in the AD.
+It will look like this:
+servicePrincipalName=*
+or 
+sAMAccountName=*
+so this are suspicious querys, and the rule I am writing will set an alert if a such a query is done.

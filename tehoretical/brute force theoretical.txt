@@ -1,0 +1,30 @@
+Brute force
+A type of cyber attack.
+for example, for entering a website that requires a password.
+Brute force hacks the password using guesses.
+loging with Many passwords generaly from a list, until it succeeds.
+the usernames, can either be known from before, and sometimes are also being guessed.
+
+There are two different matters, two strategies about dealing with the attack.
+1 How to prevent such an attack
+2 How to catch that such an attack is happening or has happened in the past.
+
+Prevention is done in several forms. I divided it into 3 topics
+1 Make it difficult for the attacker to guess the password.
+Whether it's by using strong passwords,
+Creating a delay between login attempts so guesses take a long time
+2 Require additional identification
+For example MFA multi factor authtintication by the user.
+CAPTCHA that should differentiate between a human user and a bot
+3 Identification of the attacker
+For example, blocking suspicious IPs
+
+catching the brute force attack is what i a asked here.
+There are all kinds of signs that distinguish a legitimate user from an attacker
+First of all, to understand what is happening, it is necessary to listen to network traffic, and record it
+This information can be analyzed to understand if there are any attack attempts (past or present)
+An attack can be more sophisticated and then it will be more difficult to detect
+In the case of a bot that tries multiple passwords from a list, then there will be multiple login attempts from the same IP in a short time
+Also, there are constant time differences between attempts
+The passwords that are trying to activate appear as clients from a list.
+The attacks can be more sophisticated, and it is still possible to identify patterns that reveal that there is abnormal activity.
