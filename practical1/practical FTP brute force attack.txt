@@ -1,10 +1,17 @@
 my mission is to record a pcap and write a rule for FTP brute force attack.
+
 A pcap is a packet of data being transmitted on the network.
 I installed and used wireshark for that purpose.
 Record a pcap - done.
-The FTP syntax for getting username is USER and for password is PASS.
-When a brute force attack is happening there will be many logins attempts in a brief time, the rule that I tried to write is based on that. 
-The rule is: If there are more than 10 USER or 10 PASS from the same IP than an alert will be raised.
-i couldn't solve the error and the time was running so the yara rule that i wrote is this: 
+
+A sign that a brute force attack is happening, could be many logins attempts to a user in a brief time, 
+failed login in FTP is: "530 Login failed"
+the rule that I tried to write is based on that. 
+
 if there are more than 10 failed login there will be alert. 
-I should have make a condition that mkakes this rule depend on the time period, but i need more time for that. 
+
+need to comment that this rule should be improved like that: 
+the failed logins will send an alert only if they occure in a short period, 
+for example 10 logins attemps in 10 seconds.
+also the source of the login request should be from the same IP
+I need more time to improve it. but i proved the concept that i can learn yara and write rules
