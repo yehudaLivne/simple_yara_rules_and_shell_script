@@ -5,6 +5,7 @@ few therotecial and practical missions
 
 Theoretical 
 1.What is brute force attack, and how will you catch it? 
+
 2.What is the problem with clear text authentication? 
 
 Practical:
