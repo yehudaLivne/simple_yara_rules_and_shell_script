@@ -4,7 +4,10 @@
 in this project I worked on a 
 few therotecial and practical missions
 
+the answer to the 2 theretical questions is in the theoretical directory
+the solving of the 3 practical tasks is each one in a differnt directory
 
+the tasks are:
 
 Theoretical:
 
