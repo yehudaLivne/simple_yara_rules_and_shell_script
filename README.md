@@ -17,6 +17,7 @@ Theoretical:
 Practical:
 
 1.Record a pcap and write a rule for FTP brute force attack:
+
     - Notes: usually we will use yara(https://yara.readthedocs.io/en/stable/writingrules.html) to catch it, find which parts in the ftp header are generic and should be included in the rule
    - YARA syntax: https://yara.readthedocs.io/en/stable/writingrules.html
 
