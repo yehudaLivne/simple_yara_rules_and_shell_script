@@ -1,12 +1,12 @@
 Clear text authentication, is a method of transmitting authentication credentials (such as usernames and passwords) 
 over a network or communication channel without encryption or any form of protection. 
-The authentication data is sent as readable text. this is a a serious vulnerability. this are some of the things that can get wrong:
+The authentication data is sent as readable text. this is a a serious vulnerability. these are some of the things that can get wrong:
 
 Eavesdropping: any attacker who has access to the network traffic can intercept and eavesdrop on the clear text authentication data. 
 Attackers can use network sniffing tools or compromised network devices to capture the credentials as they traverse the network.
 
 Password Exposure: Clear text authentication exposes passwords directly. 
-In cases where users reuse passwords across multiple accounts, the compromise of one account can potentially lead to the compromise of others.
+In cases where users reuse passwords across multiple accounts, the exposure of one account can potentially lead to the exposure of others.
 
 No Protection Against Man-in-the-Middle (MitM) Attacks: Clear text authentication provides no defense against MitM attacks, 
 where an attacker intercepts and possibly alters the communication between two parties. 
@@ -20,8 +20,9 @@ Regulatory Compliance Issues: Many data protection regulations and compliance st
 require organizations to protect sensitive data, including user credentials. 
 Clear text authentication is often non-compliant with these requirements and can result in legal and financial consequences for organizations that use it.
 
-another thing is respect to the software clients:
+another aspect is respect to the software clients:
 When users become aware that an organization is using clear text authentication, 
 it erodes their trust in the organization's commitment to security. 
 It can also harm the organization's reputation, particularly if security breaches or data leaks occur as a result.
 
+a more secure way of sending passwords is to encrypt the passwords or use a hash function, so even if someone is listening to the network data, it will be hard to scrap passwords and usernames
